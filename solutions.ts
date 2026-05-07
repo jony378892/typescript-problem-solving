@@ -53,12 +53,6 @@ const toggleReadStatus = (book: Book): Book => {
   };
 };
 
-toggleReadStatus({
-  title: "TypeScript Guide",
-  author: "Jane Doe",
-  publishedYear: 2024,
-});
-
 // Problem 6
 class Person {
   name: string;
