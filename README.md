@@ -80,11 +80,11 @@ Built a function that returns common elements from two arrays.
 
 ## Blog 1
 
-Why `any` is called a type safety hole and why `unknown` is safer in TypeScript.
+Why is any labeled a "type safety hole," and why is unknown the safer choice for handling unpredictable data?
 
 ## Blog 2
 
-How `Generics` help create reusable and type-safe code in TypeScript.
+How do Generics allow me to build reusable components and functions that stay strictly typed regardless of the data structures passed in?
 
 ---
 
@@ -94,6 +94,12 @@ How `Generics` help create reusable and type-safe code in TypeScript.
 
 ```bash id="jlwmr0"
 node solutions.ts
+```
+
+or
+
+```bash id="jlwmr0"
+bun solution.ts
 ```
 
 ---
