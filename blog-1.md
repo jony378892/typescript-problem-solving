@@ -35,3 +35,7 @@ As `any` types removes all type protection, It creates `type safety hole` within
 - Runtime error increase
 - No error during compile time
 - keeps hidden bugs within the code
+
+# Conclusion
+
+The any type in TypeScript removes type checking and allows a variable to hold any value without restrictions. It skips TypeScript’s safety system, which can lead to unexpected runtime errors.

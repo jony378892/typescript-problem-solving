@@ -1,4 +1,4 @@
-# How do Generics allow you to build reusable components and functions that stay strictly typed regardless of the data structures passed in?
+# How do Generics allow me to build reusable components and functions that stay strictly typed regardless of the data structures passed in?
 
 ## Introduction
 
@@ -68,3 +68,7 @@ const stringResult = getFirstElement(["a", "b", "c"]);
 ```
 
 TypeScript automatically infer the types of the data passed when the function is invoked. No type needs to be called explicitly.
+
+# Conclusion
+
+Generics in TypeScript allow developers to write reusable and type-safe code without explicitly using any static type. They help avoid duplication while maintaining strict type checking, making applications more scalable and reliable.
