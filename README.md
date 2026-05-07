@@ -1,70 +1,99 @@
-# How do Generics allow you to build reusable components and functions that stay strictly typed regardless of the data structures passed in?
+## 📖 Introduction
 
-## Introduction
+This repository contains solutions for the **B7A1 Assignment: Advanced Problem Solving with TypeScript & OOP**.
 
-`Generics` is a typescript feature which help us to write a function for inferring a type of any parameter passed into the function. It usually helps us to reuse the logic of any functions or classes without repeating the code.
+The project demonstrates fundamental TypeScript concepts such as:
 
-## What is generics?
+- Functions
+- Arrays
+- Union Types
+- Generics
+- Interfaces
+- Object-Oriented Programming (OOP)
+- Type Safety
 
-Generics are a feature in Typescript that allow functions, classes, interfaces and types to work with multiple data types dynamically.
+---
 
-Example:
+# Project Structure
 
-```ts
-function identity<T>(value: T): T {
-  return value;
-}
+```text id="qn5kg3"
+├── solutions.ts
+├── blog-1.md
+├── blog-2.md
+└── README.md
 ```
 
-Here:
+---
 
-- `T` is a generic type
-- The function accepts a value of type `T`
-- It also returns the same type `T`
+# Technologies Used
 
-This keeps the function reusable and type-safe.
+- TypeScript
+- Node.js
 
-## How Generics Maintain Type Safety
+---
 
-Generic preserve the type passed into the function. Generics helps to reuse the same types again if necessary.
+# Problem Solutions
 
-```ts
-function identity<T>(value: T): T {
-  return value;
-}
+### Problem 1: Filter Even Numbers
 
-const result = identity("Hello");
+Created a function that returns only even numbers from an array.
+
+---
+
+### Problem 2: Reverse String
+
+Implemented a function to reverse a string.
+
+---
+
+### Problem 3: Type Guards with Union Types
+
+Used union types and type guards to identify whether the input is a string or number.
+
+---
+
+### Problem 4: Generic Function
+
+Created a generic function using `keyof` constraints to safely access object properties.
+
+---
+
+### Problem 5: Interface and Object Manipulation
+
+Used interfaces and object spreading to add a new property to a book object.
+
+---
+
+### Problem 6: OOP and Inheritance
+
+Implemented `Person` and `Student` classes using inheritance.
+
+---
+
+### Problem 7: Array Intersection
+
+Built a function that returns common elements from two arrays.
+
+---
+
+# Blog Topics
+
+## Blog 1
+
+Why `any` is called a type safety hole and why `unknown` is safer in TypeScript.
+
+## Blog 2
+
+How `Generics` help create reusable and type-safe code in TypeScript.
+
+---
+
+# How to Run the Project
+
+## Run Typescript File
+
+```bash id="jlwmr0"
+node solutions.ts
 ```
 
-TypeScript automatically understands:
-
-```ts
-result: string;
-```
-
-now it can works safely:
-
-```ts
-result.toUpperCase();
-```
-
-## Reusable Generic Functions
-
-Generics help create reusable functions for different data types.
-
-Example:
-
-```ts
-function getFirstElement<T>(array: T[]): T {
-  return array[0];
-}
-```
-
-Usage:
-
-```ts
-const numberResult = getFirstElement([1, 2, 3]);
-const stringResult = getFirstElement(["a", "b", "c"]);
-```
-
-TypeScript automatically infer the types of the data passed when the function is invoked. No type needs to be called explicitly.
+---
